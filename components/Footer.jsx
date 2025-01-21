@@ -18,7 +18,6 @@ const Footer = ({ toggle }) => {
   
     return (
       <footer className={`py-10 ${bgClass}`}>
-        {/* Logo */}
         <a href="#top" className="text-center mb-6">
           <Image
             src={isDarkMode ? logo : darkLogo}
@@ -28,8 +27,6 @@ const Footer = ({ toggle }) => {
             alt="Zelalem's Logo"
           />
         </a>
-  
-        {/* Icons */}
         <div className="flex justify-center gap-6">
             <a href="mailto:zelalemtfitru@gmail.com" aria-label='Email Zelalem Fitru'>
                 <MdOutlineMailOutline
@@ -47,8 +44,6 @@ const Footer = ({ toggle }) => {
                 /> 
             </a>
         </div>
-  
-        {/* Footer Text */}
         <p className="mt-6 text-sm text-center">
           &copy; {new Date().getFullYear()} Zelalem. All rights reserved.
         </p>
