@@ -69,7 +69,7 @@ const Header = ({ toggle }) => {
           <MdOutlineMailOutline className="text-lg w-4" />
         </a>
         <a
-          href="/2025_Zelalem_Fitru.pdf"
+          href="/2025_Zelalem_Fitru .pdf"
           download
           className="px-10 py-3 flex items-center gap-2 rounded-full border transition-all duration-300"
           style={{
@@ -85,6 +85,7 @@ const Header = ({ toggle }) => {
             (e.target.style.backgroundColor = textColor) &
             (e.target.style.color = bgColor)
           }
+          aria-label="Download my resume"
         >
           My resume
           <FaRegFilePdf className="text-lg w-4" />
