@@ -42,9 +42,12 @@ const Header = ({ toggle }) => {
         </span>
       </h1>
       <h2 className="text-xl md:text-2xl tracking-wider" style={{ color: hoverColor }}>
-        Frontend Developer
+        Frontend | Backend
       </h2>
-      <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
+      <h2 className="text-xl md:text-2xl tracking-wider" style={{ color: hoverColor }}>
+        Full-stack | Software
+      </h2>
+      <div className="flex flex-col sm:flex-row items-center gap-4">
         <a
           href="#contact"
           className="px-10 py-3 flex items-center gap-2 rounded-full border shadow-lg transition-all duration-300"
