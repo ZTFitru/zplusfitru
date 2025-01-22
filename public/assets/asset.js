@@ -4,6 +4,20 @@ import dang from '@/public/images/Dangol.png';
 import chess from '@/public/images/chessWith.png';
 import rockPaper from '@/public/images/RockPaper.png';
 import lennon from '@/public/images/Lennon.png';
+import { BiLogoVisualStudio } from "react-icons/bi";
+import { SiPostman } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { FaCss3Alt } from "react-icons/fa6";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiTypescript } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { DiMongodb } from "react-icons/di";
+
 
 export const projects = [
     {
@@ -81,79 +95,65 @@ export const projects = [
 
 export const techTools = [
     {
-      name: "Visual Studio Code",
-      image:
-        "https://img.shields.io/badge/Visual%20Studio%20Code-007ACC.svg?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white",
+        name: "Visual Studio Code",
+        icon: <BiLogoVisualStudio />
     },
     {
-      name: "GitHub",
-      image:
-        "https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white",
+        name: "GitHub",
+        icon: <FaGithub />
     },
     {
-      name: "Postman",
-      image:
-        "https://img.shields.io/badge/Postman-FF6C37.svg?style=for-the-badge&logo=Postman&logoColor=white",
+        name: "Postman",
+        icon: <SiPostman />
     }
 ];
 
 export const techStack = [
     {
-        name: "HTML5",
-        image:
-            "https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white",
+            name: "HTML5",
+            icon: <FaHtml5 />
         },
         {
-        name: "CSS3",
-        image:
-            "https://img.shields.io/badge/CSS-663399.svg?style=for-the-badge&logo=CSS&logoColor=white",
+            name: "CSS3",
+            icon: <FaCss3Alt />
         },
         {
-        name: "Tailwind CSS",
-        image:
-            "https://img.shields.io/badge/Tailwind%20CSS-06B6D4.svg?style=for-the-badge&logo=Tailwind-CSS&logoColor=white",
+            name: "Tailwind CSS",
+            icon: <RiTailwindCssFill />
         },
         {
-        name: "JavaScript",
-        image:
-            "https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black",
+            name: "JavaScript",
+            icon: <IoLogoJavascript />
         },
         {
-        name: "React",
-        image:
-            "https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black",
+            name: "React",
+            icon: <FaReact />
         },
         {
-        name: "TypeScript",
-        image:
-            "https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white",
+            name: "TypeScript",
+            icon: <SiTypescript />  
         },
         {
-        name: "Next.js",
-        image:
-            "https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=Next.js&logoColor=white",
+            name: "Next.js",
+            icon: <RiNextjsFill />
         }
 ];
 
 export const backend = [
     {
         name: "Node.js",
-        image:
-            "https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=Node.js&logoColor=white",
+        icon: <FaNodeJs />
     },
     {
         name: "Express",
-        image:
-            "https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white",
+        icon: <SiExpress />
     },
     {
         name: "MongoDB",
-        image:
-            "https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=MongoDB&logoColor=white",
+        icon: <DiMongodb />
     },
     {
         name: "Next.js",
-        image:
-            "https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=Next.js&logoColor=white",
+        icon: <RiNextjsFill />
     }
 ];

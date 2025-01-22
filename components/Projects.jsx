@@ -1,7 +1,6 @@
 import { projects } from "@/public/assets/asset";
 import Image from "next/image";
-import React from "react";
-import { FiSend } from "react-icons/fi";
+import React, { useState } from "react";
 import { MdExpandMore } from "react-icons/md";
 
 const Projects = ({ toggle }) => {
@@ -10,6 +9,14 @@ const Projects = ({ toggle }) => {
   const bgColor = isDarkMode ? "#2F2A26" : "#FFF8E1";
   const textColor = isDarkMode ? "#fff" : "#000";
   const hoverColor = isDarkMode ? "#A0A05E" : "#53532F";
+
+  const [visibleProj, setVisibleProj] = useState(4);
+
+  const displayedProj = projects.slice(0, visibleProj);
+
+  const handleShowMore = () => {
+    setVisibleProj(visibleProj.length);
+  };
 
   return (
     <div
@@ -28,7 +35,7 @@ const Projects = ({ toggle }) => {
         Projects
       </h4>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 my-10">
-        {projects.map((project) => (
+      {displayedProj.map((project) => (
           <div
             key={project.id}
             className="aspect-square rounded-lg relative cursor-pointer group"
@@ -39,9 +46,12 @@ const Projects = ({ toggle }) => {
             <Image
               src={project.projImg}
               alt={project.title}
-              layout="fill"
-              objectFit="cover"
               className="rounded-lg"
+              style={{
+                objectFit: 'cover',
+                width: '100%',
+                height: '100%',
+              }}
             />
             <div
               className="w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between transition-all duration-500 group-hover:bottom-7"
@@ -56,27 +66,29 @@ const Projects = ({ toggle }) => {
           </div>
         ))}
       </div>
-      <a
-        href=""
-        className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 transition-colors duration-300"
-        style={{
-          color: textColor,
-          border: `1px solid ${hoverColor}`,
-          backgroundColor: bgColor,
-          boxShadow: `0 4px 15px ${hoverColor}`,
-        }}
-        onMouseEnter={(e) => {
-          e.target.style.backgroundColor = hoverColor;
-          e.target.style.color = bgColor;
-        }}
-        onMouseLeave={(e) => {
-          e.target.style.backgroundColor = bgColor;
-          e.target.style.color = textColor;
-        }}
-      >
-        Show More
-        <MdExpandMore />
-      </a>
+      {visibleProj < projects.length && (
+        <button
+          className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 transition-colors duration-300"
+          style={{
+            color: textColor,
+            border: `1px solid ${hoverColor}`,
+            backgroundColor: bgColor,
+            boxShadow: `0 4px 15px ${hoverColor}`,
+          }}
+          onMouseEnter={(e) => {
+            e.target.style.backgroundColor = hoverColor;
+            e.target.style.color = bgColor;
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.backgroundColor = bgColor;
+            e.target.style.color = textColor;
+          }}
+          onClick={handleShowMore} 
+        >
+          Show More
+          <MdExpandMore />
+        </button>
+      )}
     </div>
   );
 };

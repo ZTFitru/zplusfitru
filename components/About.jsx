@@ -72,14 +72,7 @@ const About = ({ toggle }) => {
                 </p>
                 <div className="flex flex-wrap gap-3 mt-5 ">
                   {techStack.map((tech, index) => (
-                    <Image
-                      key={index}
-                      src={tech.image}
-                      width={250}
-                      height={250}
-                      alt='tech icons' 
-                      className="w-16 sm:w-20"
-                    />
+                    <div key={index} className="text-4xl">{tech.icon}</div>
                   ))}
                 </div>
               </li>
@@ -92,14 +85,7 @@ const About = ({ toggle }) => {
                 </p>
                 <div className="flex flex-wrap gap-3 mt-5 ">
                   {backend.map((tech, index) => (
-                    <Image
-                      key={index}
-                      src={tech.image}
-                      width={250}
-                      height={250}
-                      alt='tech icons' 
-                      className="w-16 sm:w-20"
-                    />
+                    <div key={index} className="text-4xl">{tech.icon}</div>
                   ))}
                 </div>
               </li>
@@ -113,7 +99,7 @@ const About = ({ toggle }) => {
                   key={index}
                   className="flex items-center justify-center w-16 sm:w-20 aspect-square cursor-pointer transition-transform duration-300 hover:scale-105"
                 >
-                  <Image src={tool.image} width={300} height={300} alt='tool icons' />
+                  <div className="text-4xl">{tool.icon}</div>
                 </li>
               ))}
             </ul>
