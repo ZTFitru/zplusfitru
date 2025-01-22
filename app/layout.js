@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
         className={`${openSans.className} ${poppins.className} antialiased leading-8 overflow-x-hidden`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
