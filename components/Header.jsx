@@ -13,7 +13,7 @@ const Header = ({ toggle }) => {
 
   return (
     <div
-      className="w-full text-center h-screen mt-5 flex flex-col items-center justify-center gap-6"
+      className="w-full text-center h-screen mt-12 flex flex-col items-center justify-center gap-6"
       style={{ backgroundColor: bgColor, color: textColor }}
     >
       <div className="relative">
