@@ -1,7 +1,6 @@
 import { projects } from "@/public/assets/asset";
 import Image from "next/image";
 import React, { useState } from "react";
-import { FiSend } from "react-icons/fi";
 import { MdExpandMore } from "react-icons/md";
 
 const Projects = ({ toggle }) => {

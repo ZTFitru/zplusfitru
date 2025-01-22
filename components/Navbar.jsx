@@ -60,7 +60,7 @@ const Navbar = ({ toggle, toggleTheme }) => {
           )}
         </button>
         <a
-          href="#contact"
+          href="mailto:zelalemtfitru@gmail.com" aria-label='Email Zelalem Fitru'
           className={`hidden lg:flex items-center gap-3 px-8 py-2.5 border rounded-full transition-all duration-300 ${
             isDarkMode
               ? "border-[#FFF8E1] text-[#FFF8E1] hover:bg-[#53532F]"
