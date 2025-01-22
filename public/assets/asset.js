@@ -95,7 +95,7 @@ export const projects = [
 
 export const techTools = [
     {
-        name: "Visual Studio Code",
+        name: "VS Code",
         icon: <BiLogoVisualStudio />
     },
     {
@@ -118,11 +118,11 @@ export const techStack = [
             icon: <FaCss3Alt />
         },
         {
-            name: "Tailwind CSS",
+            name: "Tailwind",
             icon: <RiTailwindCssFill />
         },
         {
-            name: "JavaScript",
+            name: "JS",
             icon: <IoLogoJavascript />
         },
         {
@@ -130,11 +130,11 @@ export const techStack = [
             icon: <FaReact />
         },
         {
-            name: "TypeScript",
+            name: "TS",
             icon: <SiTypescript />  
         },
         {
-            name: "Next.js",
+            name: "Next",
             icon: <RiNextjsFill />
         }
 ];
@@ -149,7 +149,7 @@ export const backend = [
         icon: <SiExpress />
     },
     {
-        name: "MongoDB",
+        name: "Mongo",
         icon: <DiMongodb />
     },
     {

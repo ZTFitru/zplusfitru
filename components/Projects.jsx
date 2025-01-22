@@ -2,6 +2,7 @@ import { projects } from "@/public/assets/asset";
 import Image from "next/image";
 import React, { useState } from "react";
 import { MdExpandMore } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const Projects = ({ toggle }) => {
   const isDarkMode = toggle === "dark";
@@ -24,33 +25,44 @@ const Projects = ({ toggle }) => {
       className="w-full px-[12%] py-10 scroll-m-20"
       style={{ backgroundColor: bgColor, color: textColor }}
     >
-      <h4
+      <motion.h4
         className="text-center text-4xl font-bold mb-12 uppercase tracking-widest"
         style={{
           backgroundImage: `linear-gradient(90deg, ${hoverColor}, ${textColor})`,
           WebkitBackgroundClip: "text",
           color: "transparent",
         }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
       >
         Projects
-      </h4>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 my-10">
-      {displayedProj.map((project) => (
-          <div
+      </motion.h4>
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 my-10"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        {displayedProj.map((project, index) => (
+          <motion.div
             key={project.id}
             className="aspect-square rounded-lg relative cursor-pointer group"
             style={{
               boxShadow: `0 4px 15px ${hoverColor}`,
             }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.2 }} 
           >
             <Image
               src={project.projImg}
               alt={project.title}
               className="rounded-lg"
               style={{
-                objectFit: 'cover',
-                width: '100%',
-                height: '100%',
+                objectFit: "cover",
+                width: "100%",
+                height: "100%",
               }}
             />
             <div
@@ -58,16 +70,18 @@ const Projects = ({ toggle }) => {
               style={{ backgroundColor: hoverColor }}
             >
               <div className="flex flex-col gap-2">
-                <h5 className="text-lg" style={{ color: textColor }}>
-                  {project.title}
-                </h5>
+                <a href={project.link} target='_blank' rel='noopener noreferrer'>
+                  <h5 className="text-lg" style={{ color: textColor }}>
+                    {project.title}
+                  </h5>
+                </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
       {visibleProj < projects.length && (
-        <button
+        <motion.button
           className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 transition-colors duration-300"
           style={{
             color: textColor,
@@ -83,11 +97,14 @@ const Projects = ({ toggle }) => {
             e.target.style.backgroundColor = bgColor;
             e.target.style.color = textColor;
           }}
-          onClick={handleShowMore} 
+          onClick={handleShowMore}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 1 }}
         >
           Show More
           <MdExpandMore />
-        </button>
+        </motion.button>
       )}
     </div>
   );
