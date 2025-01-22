@@ -13,7 +13,7 @@ const Header = ({ toggle }) => {
 
   return (
     <div
-      className="w-full text-center h-screen mt-12 flex flex-col items-center justify-center gap-6"
+      className="w-full text-center h-screen mt-20 flex flex-col items-center justify-center gap-6"
       style={{ backgroundColor: bgColor, color: textColor }}
     >
       <div className="relative">
@@ -22,6 +22,8 @@ const Header = ({ toggle }) => {
           alt="me"
           className="rounded-full w-32 border-4"
           style={{
+            width: '12rem', 
+            height: '12rem',
             borderColor: textColor,
             boxShadow: `0 0 20px ${hoverColor}`,
           }}
