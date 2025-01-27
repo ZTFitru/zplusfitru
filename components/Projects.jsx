@@ -10,6 +10,7 @@ const Projects = ({ toggle }) => {
   const bgColor = isDarkMode ? "#2F2A26" : "#FFF8E1";
   const textColor = isDarkMode ? "#fff" : "#000";
   const hoverColor = isDarkMode ? "#A0A05E" : "#53532F";
+  const projTitle = '#fff'
 
   const [visibleProj, setVisibleProj] = useState(4);
 
@@ -66,12 +67,12 @@ const Projects = ({ toggle }) => {
               }}
             />
             <div
-              className="w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between transition-all duration-500 group-hover:bottom-7"
+              className="w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-center transition-all duration-500 group-hover:bottom-7"
               style={{ backgroundColor: hoverColor }}
             >
               <div className="flex flex-col gap-2">
                 <a href={project.link} target='_blank' rel='noopener noreferrer'>
-                  <h5 className="text-lg" style={{ color: textColor }}>
+                  <h5 className="text-lg" style={{ color: projTitle }}>
                     {project.title}
                   </h5>
                 </a>
