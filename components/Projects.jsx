@@ -58,7 +58,7 @@ const Projects = ({ toggle }) => {
           >
             <Image
               src={project.projImg}
-              alt={project.title}
+              alt={project.alt}
               className="rounded-lg"
               style={{
                 objectFit: "cover",
