@@ -38,14 +38,14 @@ export const projects = [
         projImg: harryPotter,
         alt: 'Harry Potter',
         link: "https://harrypotter-red.vercel.app/#",
-        techStack: ["Next.js", "React", "Tailwind CSS"],
+        techStack: ["React"],
         github: ''
     },
     {
         id : 3,
         title: "Reel Joy",
         description: "Movie database",
-        projImg: {realJoyMovie},
+        projImg: realJoyMovie,
         link: "https://reel-joy.vercel.app/",
         techStack: ["React", "Tailwind CSS"],
         github: ''
@@ -67,7 +67,7 @@ export const projects = [
         projImg: dang,
         alt: 'Dangol-Weather',
         link: "https://dangol-weather.vercel.app/",
-        techStack: ["Next.js", "React", "Tailwind CSS", "MongoDB"],
+        techStack: ["TypeScript", "Tailwind CSS"],
         github: ''
     },
     {
@@ -77,7 +77,7 @@ export const projects = [
         projImg: rockPaper,
         alt: 'Rock-Paper-Scissors',
         link: "https://ztfitru.github.io/Rock-Paper-Scissors/",
-        techStack: ["Next.js", "React", "Tailwind CSS", "MongoDB"],
+        techStack: ["JavaScript"],
         github: ''
     },
     {
@@ -87,7 +87,7 @@ export const projects = [
         projImg: lennon,
         alt: 'Lennon-Lawn-Care',
         link: "https://lennon-lawn-care.vercel.app/",
-        techStack: ["Next.js", "React", "Tailwind CSS", "MongoDB"],
+        techStack: ["React"],
         github: ''
     }
 ]
