@@ -4,6 +4,7 @@ import dang from '@/public/images/Dangol.png';
 import chess from '@/public/images/chessWith.png';
 import rockPaper from '@/public/images/RockPaper.png';
 import lennon from '@/public/images/Lennon.png';
+import realJoyMovie from '@/public/images/reelJoy.png'
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { SiPostman } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
@@ -37,18 +38,18 @@ export const projects = [
         projImg: harryPotter,
         alt: 'Harry Potter',
         link: "https://harrypotter-red.vercel.app/#",
-        techStack: ["Next.js", "React", "Tailwind CSS", "MongoDB"],
+        techStack: ["Next.js", "React", "Tailwind CSS"],
         github: ''
     },
-    // {
-    //     id : 3,
-    //     title: "Popcorn Score",
-    //     description: "An application that would allow the user to see all the movies when they visit the page.",
-    //     projImg: {popCorn},
-    //     link: "https://drif7er.github.io/popcorn-score/#/",
-    //     techStack: ["Next.js", "React", "Tailwind CSS", "MongoDB"],
-    //     github: ''
-    // },
+    {
+        id : 3,
+        title: "Reel Joy",
+        description: "Movie database",
+        projImg: {realJoyMovie},
+        link: "https://reel-joy.vercel.app/",
+        techStack: ["React", "Tailwind CSS"],
+        github: ''
+    },
     {
         id : 4,
         title : "Chess with Fren-EMIES",
@@ -56,7 +57,7 @@ export const projects = [
         projImg : chess,
         alt: 'Chess with Fren-EMIES',
         link : "https://github.com/ZTFitru/users-fe-app",
-        techStack: ["Next.js", "React", "Tailwind CSS", "MongoDB"],
+        techStack: ["React", "Express"],
         github: ''
     },
     {
