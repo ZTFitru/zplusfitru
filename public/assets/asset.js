@@ -46,6 +46,7 @@ export const projects = [
         title: "Reel Joy",
         description: "Movie database",
         projImg: realJoyMovie,
+        alt: 'Reel Joy',
         link: "https://reel-joy.vercel.app/",
         techStack: ["React", "Tailwind CSS"],
         github: ''

@@ -25,7 +25,7 @@ const Header = ({ toggle }) => {
       >
         <Image
           src={myImage}
-          alt="me"
+          alt="head shot of Zelalem"
           className="rounded-full w-32 border-4"
           style={{
             width: "12rem",
@@ -104,7 +104,7 @@ const Header = ({ toggle }) => {
           <MdOutlineMailOutline className="text-lg w-4" />
         </motion.a>
         <motion.a
-          href="/2025_Zelalem_Fitru .pdf"
+          href="/2025_Zelalem.pdf"
           download
           className="px-10 py-3 flex items-center gap-2 rounded-full border transition-all duration-300"
           style={{

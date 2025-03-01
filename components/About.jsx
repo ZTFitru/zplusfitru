@@ -42,7 +42,7 @@ const About = ({ toggle }) => {
         >
           <Image
             src={myImage}
-            alt="Zelalem"
+            alt="Head shot of Zelalem"
             className="w-full rounded-3xl border-4"
             style={{
               borderColor: textColor,
