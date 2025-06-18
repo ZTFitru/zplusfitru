@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import myImage from "@/public/me.png";
+import myImage from "@/public/projImage-noBG.png"
 import { techStack } from "@/public/assets/asset";
 import { backend } from "@/public/assets/asset";
 import { techTools } from "@/public/assets/asset";
