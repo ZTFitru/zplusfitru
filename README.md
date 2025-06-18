@@ -9,6 +9,10 @@ This site highlights the projects I've built, the technologies I use, and the sk
 - Mobile friendly design. 
 - Interactive chatbot to answer some questions about me.
 
+## Preview <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Movie%20Camera.png" alt="Movie Camera" width="25" height="25" />
+
+![Preview](public/zplusfitruPortfolio.gif)
+
 ## Tech Stack <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" alt="Laptop" width="25" height="25" />
 - **Framework:** Next.js
 - **Styling:** Tailwind CSS
