@@ -5,6 +5,7 @@ import chess from '@/public/images/chessWith.png';
 import rockPaper from '@/public/images/RockPaper.png';
 import lennon from '@/public/images/Lennon.png';
 import realJoyMovie from '@/public/images/reelJoy.png'
+import fitCircle from '@/public/images/fit-circle-page.png'
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { SiPostman } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
@@ -23,6 +24,16 @@ import { DiMongodb } from "react-icons/di";
 export const projects = [
     {
         id : 1,
+        title: "Fit-Circle",
+        description: "Fitness Tracker with MongoDB.",
+        projImg: fitCircle,
+        alt: 'Fit-Circle',
+        link: "https://trainwithcircle.vercel.app/",
+        techStack: ["Next.js", "React", "Tailwind CSS", "MongoDB"],
+        github: ''
+    },
+    {
+        id : 2,
         title: "Snackable Thoughts",
         description: "Blog application with MongoDB.",
         projImg: snackable,
@@ -32,7 +43,7 @@ export const projects = [
         github: ''
     },
     {
-        id : 2,
+        id : 3,
         title: "Harry Potter",
         description: "Harry Potter database.",
         projImg: harryPotter,
@@ -42,7 +53,7 @@ export const projects = [
         github: ''
     },
     {
-        id : 3,
+        id : 4,
         title: "Reel Joy",
         description: "Movie database",
         projImg: realJoyMovie,
@@ -52,7 +63,7 @@ export const projects = [
         github: ''
     },
     {
-        id : 4,
+        id : 5,
         title : "Chess with Fren-EMIES",
         description : "Play chess with Fren-EMIES.",
         projImg : chess,
@@ -62,7 +73,7 @@ export const projects = [
         github: ''
     },
     {
-        id : 5,
+        id : 6,
         title: "Dangol-Weather",
         description: "Local weather along with an applicable Boomhauer quote.",
         projImg: dang,
@@ -72,7 +83,7 @@ export const projects = [
         github: ''
     },
     {
-        id : 6,
+        id : 7,
         title: "Rock-Paper-Scissors",
         description: "Rock, Paper and Scissors or a difficult version inspired by SpongeBob.",
         projImg: rockPaper,
@@ -82,7 +93,7 @@ export const projects = [
         github: ''
     },
     {
-        id : 7,
+        id : 8,
         title: "Lennon-Lawn",
         description: "A vibrant and user-friendly lawn service application",
         projImg: lennon,
